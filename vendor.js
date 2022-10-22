@@ -11,7 +11,17 @@ const logBtn = document.getElementById('log-btn');
     monsterHealthBar.value = maxLife;
     playerHealthBar.max = maxLife;
     playerHealthBar.value = maxLife
+  } 
+
+  function dealMonsterDamage(damage) {
+    const dealtDamage = math.random() * damage;
+    monsterHealthBar.value = +monsterHealthBar.value - dealtDamage;
+    return dealtDamage;
+
+    
   }
+
+
 
 
 
