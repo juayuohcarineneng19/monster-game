@@ -29,4 +29,16 @@ function dealPlayerDamage(damage) {
 function increasePlayerHealth(healValue) {
   playerHealthBar.value = +playerHealthBar.value + healValue;
 }
+function resetGame(value) {
+  playerHealthBar.value = value;
+  monsterHealthBar.value = value;
+}
+
+function removeBonusLife() {
+  bonusLifeEl.parentNode.removeChild(bonusLifeEl);
+}
+
+function setPlayerHealth(health) {
+  playerHealthBar.value = health;
+}
 
